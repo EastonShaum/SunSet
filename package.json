@@ -1,0 +1,22 @@
+{
+  "name": "sunset",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EastonShaum/SunSet.git"
+  },
+  "author": "EastonShaum@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EastonShaum/SunSet/issues"
+  },
+  "homepage": "https://github.com/EastonShaum/SunSet#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.1"
+  }
+}
