@@ -1,11 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { useDispatch } from "react-redux";
-import { sideNavVisible } from "../../utils/globalSlice.js"
+//import { useDispatch } from "react-redux";
+//import { sideNavVisible } from "../../utils/globalSlice.js"
 import { Link } from "react-router-dom";
 
-import Auth from '../../utils/auth'
+//import Auth from '../../utils/auth'
 
 import {
   Box,
@@ -18,16 +18,16 @@ import {
 import { MdMenu, MdAdd } from "react-icons/md";
 
 export default function Header() {
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
 
-  const toggleDrawer = (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-    dispatch(sideNavVisible());
-  };
+  // const toggleDrawer = (event) => {
+  //   if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+  //     return;
+  //   }
+  //   dispatch(sideNavVisible());
+  // };
 
-  const loggedIn = Auth.loggedIn()
+  //const loggedIn = Auth.loggedIn()
 
   let location = useLocation();
   const onNewRecipe = location.pathname.includes('new-recipe')
@@ -49,21 +49,11 @@ export default function Header() {
             color="light"
             aria-label="menu"
             // sx={{ mr: 2 }}
-            onClick={toggleDrawer}
+            //onClick={toggleDrawer}
           >
             <MdMenu />
           </IconButton>
-          { loggedIn ? (
-            <Typography variant="h3" component={Link} to="/my-kit" color="primary" fontWeight="bold" 
-              sx={{ 
-                textDecoration: 'none', 
-                flexGrow: 1, 
-                textAlign: 'center', 
-                textShadow: "0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)",
-              }}>
-              Coo<Typography component="span" variant="h3" color="secondary" fontStyle="italic" fontWeight="bold" sx={{ flexGrow: 1 }}>Kit</Typography>
-            </Typography>
-          ) : (
+          
             <Typography variant="h3" component={Link} to="/discover" color="primary" fontWeight="bold" 
               sx={{ 
                 textDecoration: 'none', 
@@ -73,7 +63,7 @@ export default function Header() {
               }}>
               Coo<Typography component="span" variant="h3" color="secondary" fontStyle="italic" fontWeight="bold" sx={{ flexGrow: 1 }}>Kit</Typography>
             </Typography>
-          )}
+          
           {!onNewRecipe ?
             <IconButton component={Link} to="/new-recipe" aria-label="add" edge="end" color="light">
               <MdAdd />

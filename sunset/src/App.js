@@ -1,7 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { Component }  from 'react';
-import { Routes, Route, Link, Switch, useLocation } from 'react-router-dom';
+import { 
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams 
+} from 'react-router-dom';
 
 import theme from './theme.js'
 
@@ -10,49 +17,73 @@ import {
   Box,
   Typography,
   ThemeProvider,
+  Button,
+  FormControl,
+  Input,
+  InputLabel,
+  FormHelperText,
+  OutlinedInput 
 } from '@mui/material'
 
 import CssBaseline from '@mui/material/CssBaseline';
-//import Header from './components/Header'
-//import Sidenav from "./components/Sidenav";
+import Header from './components/Header'
+import Sidenav from "./components/Sidenav";
+import Forms from "./components/Forms"
 import UnknownPage from './components/404';
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
 function App() {
   return (
       <Box className="App">
-        <ThemeProvider theme={theme}>
+        {/* <ThemeProvider theme={theme}>
         <CssBaseline />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
 
-        <Box sx={{
+        {/* <header>
+          <Sidenav />
+          
+            <Header />
+          
+        </header> */}
+        {/* <Link to="/forms"></Link>
+
+        <div className="App">
+          <Button variant="contained" color="primary">
+          <Link to="/Home"> Home page</Link>
+           
+          </Button>
+        </div>
+
+        <div className="App">
+          <Button variant="contained" color="primary">
+          <Link to="/"> 404</Link>
+           
+          </Button>
+        </div>
+        <FormControl>
+          <InputLabel htmlFor="component-outlined">Email address</InputLabel>
+          <OutlinedInput  id="my-input" aria-describedby="my-helper-text" />
+          <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+        </FormControl> */}
+
+        {/* <Box sx={{
           px: 2,
           pt: '55px',
           zIndex: 1,
-        }}>
+        }}> */}
           <Routes>
-            <Route exact path="/" component={UnknownPage} ></Route>
-            {/* <Route exact path="/new-recipe" component={NewRecipePage}></Route>
-            <Route exact path="/recipe/:id" component={ViewRecipe}></Route>
-            <Route exact path="/recipe/:id/edit" component={EditRecipe}></Route>
-            <Route exact path="/my-kit" component={MyKit}></Route>
-            <Route exact path="/discover" component={RecipeFeed}></Route>
-            <Route exact path="/login" ><LoginSignup page={'login'} /></Route>
-            <Route exact path="/signup" ><LoginSignup page={'signup'} /></Route> */}
-            <Route component={UnknownPage}/>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NoPage />} />
+            </Route>
           </Routes>
-        </Box>
-        </ThemeProvider>
+        {/* </Box> */}
+        {/* </ThemeProvider> */}
       </Box>
   );
 }

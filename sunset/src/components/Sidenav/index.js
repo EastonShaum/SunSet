@@ -3,8 +3,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 // Global state 
-import { sideNavVisible } from "../../utils/globalSlice.js"
-import { useDispatch, useSelector } from "react-redux";
+//import { sideNavVisible } from "../../utils/globalSlice.js"
+//import { useDispatch, useSelector } from "react-redux";
 
 // Material UI components
 import {
@@ -24,7 +24,7 @@ import {
 } from '@mui/material/';
 
 // Auth
-import Auth from "../../utils/auth";
+//import Auth from "../../utils/auth";
 
 // Custom icons
 import PostAddOutlinedIcon from '@mui/icons-material/PostAddOutlined';
@@ -36,26 +36,26 @@ import PersonAddAlt1Icon from '@mui/icons-material/PersonAddAlt1';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 // Queries/Mutations
-import { useQuery } from '@apollo/client';
-import { QUERY_ME_BASIC } from '../../utils/queries';
+// import { useQuery } from '@apollo/client';
+// import { QUERY_ME_BASIC } from '../../utils/queries';
 
 export default function Sidenav() {
-  const state = useSelector(state => state.global.sideNavVisible);
-  const dispatch = useDispatch();
+  // const state = useSelector(state => state.global.sideNavVisible);
+  // const dispatch = useDispatch();
 
-  const toggleDrawer = () => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-    dispatch(sideNavVisible());
-  };
+  // const toggleDrawer = () => (event) => {
+  //   if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+  //     return;
+  //   }
+  //   dispatch(sideNavVisible());
+  // };
 
-  const handleLogout = () => {
-    console.log('logout called')
-    Auth.logout();
-  }
+  // const handleLogout = () => {
+  //   console.log('logout called')
+  //   Auth.logout();
+  // }
 
-  const { /*loading,*/ data } = useQuery(QUERY_ME_BASIC);
+  //const { /*loading,*/ data } = useQuery(QUERY_ME_BASIC);
 
   // if (loading) {
   //   console.log('loading', loading)
@@ -63,12 +63,12 @@ export default function Sidenav() {
   //   console.log("userData", data);
   // }
 
-  const userData = data?.me || {};
+  //const userData = data?.me || {};
 
   // const token = Auth.loggedIn() ? Auth.getToken() : null;
   // console.log('token', token)
 
-  const loggedIn = Auth.loggedIn()
+  //const loggedIn = Auth.loggedIn()
 
   const imageData = [
     {
@@ -135,8 +135,8 @@ export default function Sidenav() {
   return (
     <Drawer
       anchor="left"
-      open={state}
-      onClose={toggleDrawer()}
+      //open={state}
+      //onClose={toggleDrawer()}
       variant="temporary"
       ModalProps={{
         keepMounted: true,
@@ -145,8 +145,8 @@ export default function Sidenav() {
       <Box
         sx={{ width: 250, display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
         role="presentation"
-        onClick={toggleDrawer()}
-        onKeyDown={toggleDrawer()}
+        //onClick={toggleDrawer()}
+        //onKeyDown={toggleDrawer()}
       >
         <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'space-between', flexDirection: 'column', }}>
           <Box>
@@ -173,17 +173,7 @@ export default function Sidenav() {
                   </Typography>
                 </ListItemText>
               </ListItem>
-              {loggedIn ?
-                (
-                  <ListItem>
-                    <ListItemText>
-                      <Typography>Hello, {userData.username}</Typography>
-                    </ListItemText>
-                  </ListItem>
-                )
-                :
-                ('')
-              }
+              
             </List>
             <Divider />
 
@@ -211,51 +201,7 @@ export default function Sidenav() {
                 </MenuItem>
               </Button>
 
-              {loggedIn && (
-                <Box>
-                  <Button component={Link} to="/my-kit" variant="text" sx={{ mt: 2 }}>
-                    <MenuItem
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                      }}
-                    >
-                      <ListItemIcon
-                        sx={{ marginRight: '.1rem', fontSize: 21 }}
-                      >
-                        <InboxIcon />
-                      </ListItemIcon>
-                      <ListItemText>
-                        <Typography variant="h6">
-                          My Kit
-                        </Typography>
-                      </ListItemText>
-                    </MenuItem>
-                  </Button>
-
-                  <Button component={Link} to="/new-recipe" variant="text" sx={{ mt: 2 }}>
-                    <MenuItem
-                      sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                      }}
-                    >
-                      <ListItemIcon
-                        sx={{
-                          marginRight: '.1rem'
-                        }}
-                      >
-                        <PostAddOutlinedIcon />
-                      </ListItemIcon>
-                      <ListItemText>
-                        <Typography variant="h6">
-                          New Recipe
-                        </Typography>
-                      </ ListItemText>
-                    </MenuItem>
-                  </Button>
-                </Box>
-              )}
+              
 
 
             </MenuList>
@@ -290,86 +236,7 @@ export default function Sidenav() {
         <MenuList
         // sx={{ boxShadow: '0 7px 9px -7px rgba(0,0,0,0.6),' }}
         >
-          {loggedIn ?
-            <Button
-              variant="text"
-              value="Logout"
-              onClick={handleLogout}
-              size="large"
-            >
-              <MenuItem
-                sx={{
-                  display: 'flex',
-                  alignItems: 'center'
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    marginRight: '.1rem',
-                    fontSize: 20,
-                    fontWeight: 'bold'
-                  }}>
-                  <LogoutIcon />
-                </ListItemIcon>
-                <ListItemText>
-                  <Typography variant="h6">
-                    Logout
-                  </Typography>
-                </ListItemText>
-              </MenuItem>
-            </Button>
-            :
-            <Box sx={{ display: 'flex', justifyContent: "space-between" }}>
-              <Button
-                component={Link}
-                to="/login"
-                variant="text"
-                value="Login"
-              // onClick={toggleDrawer()}
-              >
-                <MenuItem
-                  sx={{
-                    display: 'flex',
-                    alignItems: 'center'
-                  }}
-                >
-                  <ListItemIcon
-                    sx={{
-                      marginRight: '.1rem'
-                    }}>
-                    <LoginIcon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    Login
-                  </ListItemText>
-                </MenuItem>
-              </Button>
-              <Button
-                component={Link}
-                to="/signup"
-                variant="text"
-                value="Signup"
-              // onClick={toggleDrawer()}
-              >
-                <MenuItem
-                  sx={{
-                    display: 'flex',
-                    alignItems: 'center'
-                  }}
-                >
-                  <ListItemIcon
-                    sx={{
-                      marginRight: '.1rem'
-                    }}>
-                    <PersonAddAlt1Icon />
-                  </ListItemIcon>
-                  <ListItemText>
-                    Signup
-                  </ListItemText>
-                </MenuItem>
-              </Button>
-            </Box>
-          }
+          
         </MenuList>
       </Box>
     </Drawer>
