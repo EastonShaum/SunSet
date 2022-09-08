@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Component }  from 'react';
 import { 
   BrowserRouter as Router,
   Routes,
   Route,
+  NavLink,
+  HashRouter,
   Link,
   useRouteMatch,
   useParams 
@@ -16,6 +17,7 @@ import {
   Grid,
   Box,
   Typography,
+  Container,
   ThemeProvider,
   Button,
   FormControl,
@@ -31,7 +33,10 @@ import Sidenav from "./components/Sidenav";
 import Forms from "./components/Forms"
 import UnknownPage from './components/404';
 import Layout from "./pages/Layout";
+import Footer from "./components/Footer"
 import Home from "./pages/Home";
+import Pricing from './pages/Pricing';
+import Form from "./pages/Form";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
@@ -75,16 +80,23 @@ function App() {
           zIndex: 1,
         }}> */}
           <Routes>
-            <Route path="/" element={<Layout />}>
+            {/* <Route path="/" element={<Layout />}> */}
               <Route index element={<Home />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/form" element={<Form />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NoPage />} />
-            </Route>
+            {/* </Route> */}
           </Routes>
         {/* </Box> */}
         {/* </ThemeProvider> */}
+        {/* <footer>
+          <Footer></Footer>
+        </footer> */}
+        
       </Box>
+      
   );
 }
 

@@ -3,7 +3,7 @@ import {
   Link, Redirect 
 } from "react-router-dom";
 
-
+import Pricing from './Pricing';
 
 import {
   Grid,
@@ -40,8 +40,14 @@ export default function Home({ page }) {
         }}
       >
         <Grid item xs={12} sm={10} md={6} lg={4} xl={4}>
-          <Box>Hellloooooooooo</Box>
+          <Box>This is the home page</Box>
+          {/* <Link to="/form">Form page</Link> */}
+          <Link to="/pricing">Pricing </Link>
+          <Link to="/about">About page</Link>
+          <Link to="/contact">Contact page</Link>
+          <Link to="/404">404 page</Link>
         </Grid>
+        
       </Grid>
     </Box>
   )
