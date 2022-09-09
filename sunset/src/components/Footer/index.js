@@ -17,13 +17,16 @@ import {
   Toolbar,
 } from '@mui/material'
 
+import CssBaseline from '@mui/material/CssBaseline';
+import GlobalStyles from '@mui/material/GlobalStyles';
+
 import { MdMenu, MdAdd } from "react-icons/md";
 
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" to="https://mui.com/">
         Your Website
       </Link>{' '}
       {new Date().getFullYear()}
@@ -33,22 +36,7 @@ function Copyright(props) {
 }
 
 export default function Footer() {
-  //const dispatch = useDispatch();
-
-  // const toggleDrawer = (event) => {
-  //   if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-  //     return;
-  //   }
-  //   dispatch(sideNavVisible());
-  // };
-
-  //const loggedIn = Auth.loggedIn()
-
-  let location = useLocation();
-  // console.log("url", window.location.pathname)
-
-
-
+  
   const footers = [
     {
       title: 'Company',
@@ -76,6 +64,8 @@ export default function Footer() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <GlobalStyles/>
+      <CssBaseline/>
       <Container
         maxWidth="md"
         component="footer"
@@ -94,7 +84,7 @@ export default function Footer() {
               <ul>
                 {footer.description.map((item) => (
                   <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
+                    <Link to="#" variant="subtitle1" color="text.secondary">
                       {item}
                     </Link>
                   </li>
