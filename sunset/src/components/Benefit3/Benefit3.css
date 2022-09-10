@@ -1,0 +1,39 @@
+.benefit-3 {
+  display: flex;
+  flex-direction: column;
+  height: 405px;
+  left: 99px;
+  position: absolute;
+  top: 679px;
+  width: 368px;
+}
+
+.tax-receipt-icon-1 {
+  height: 96px;
+  margin-left: 134px;
+  object-fit: cover;
+  width: 96px;
+}
+
+.tax-savings {
+  height: 48px;
+  letter-spacing: 0;
+  margin-top: 23px;
+  text-align: center;
+  width: 364px;
+}
+
+.how-you-can-apply-yo {
+  height: 227px;
+  letter-spacing: 0;
+  margin-left: 41px;
+  margin-top: 11px;
+  text-align: center;
+  width: 282px;
+}
+
+.benefit-3.benefit-3-1 {
+  left: 0;
+  top: 789px;
+}
+

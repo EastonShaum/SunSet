@@ -1,5 +1,7 @@
 import React, { Component }  from 'react';
 
+import SolarForm from './Solar Form';
+
 
 import { 
     FormControl,
@@ -20,6 +22,7 @@ export default function Form() {
   <InputLabel htmlFor="my-input">Email address</InputLabel>
   <Input id="my-input" aria-describedby="my-helper-text" />
   <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+  <SolarForm/>
 </FormControl>
 
 }

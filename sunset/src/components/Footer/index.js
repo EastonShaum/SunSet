@@ -36,6 +36,13 @@ function Copyright(props) {
 }
 
 export default function Footer() {
+
+  //No Footer for these pages
+  if(window.location.href.indexOf('solar') > -1)
+  {
+   return; 
+  }
+
   
   const footers = [
     {

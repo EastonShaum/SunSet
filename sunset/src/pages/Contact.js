@@ -22,7 +22,7 @@ export default function Contact({ page }) {
       <Box
         sx={{
           margin: 0,
-          position: 'fixed',
+          //position: 'fixed',
           top: 0,
           right: 0,
           bottom: 0,

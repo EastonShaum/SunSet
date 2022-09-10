@@ -21,7 +21,11 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import { MdMenu, MdAdd } from "react-icons/md";
 
 export default function Header() {
-
+  //No header for these pages
+  if(window.location.href.indexOf('solar') > -1)
+  {
+   return; 
+  }
 
   return (
     <Box sx={{ flexGrow: 1 }}>

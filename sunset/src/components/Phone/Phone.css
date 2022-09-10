@@ -1,0 +1,382 @@
+.phone {
+  align-items: flex-end;
+  background-color: var(--white);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 3770px;
+  overflow: hidden;
+  width: 511px;
+}
+
+.overlap-group7 {
+  height: 873px;
+  margin-right: -1276px;
+  margin-top: -12px;
+  position: relative;
+  width: 1920px;
+}
+
+.first-section {
+  background-color: var(--navy-blue);
+  border: 1px none;
+  height: 870px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.save-money-and-own-y {
+  left: 185px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 101px;
+  width: 408px;
+}
+
+.solar-energy {
+  left: 296px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 155px;
+}
+
+.overlap-group {
+  height: 46px;
+  left: 194px;
+  position: absolute;
+  top: 233px;
+  width: 399px;
+}
+
+.button-box {
+  background-color: var(--white);
+  border: 1px none;
+  border-radius: 15px;
+  height: 46px;
+  left: 62px;
+  position: absolute;
+  top: 0;
+  width: 282px;
+}
+
+.book-consultation {
+  height: 46px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 399px;
+}
+
+.sign-up-for-a-free-c {
+  height: 165px;
+  left: 241px;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 255px;
+  width: 297px;
+}
+
+.funnel-person-2-png-1 {
+  height: 452px;
+  left: 204px;
+  object-fit: cover;
+  position: absolute;
+  top: 421px;
+  width: 370px;
+}
+
+.during-this-free-pre {
+  align-self: center;
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-right: 21.0px;
+  margin-top: 52px;
+  min-height: 74px;
+  text-align: center;
+  width: 448px;
+}
+
+.overlap-group6 {
+  height: 1696px;
+  margin-right: -1394px;
+  margin-top: 12px;
+  position: relative;
+  width: 1944px;
+}
+
+.benefit-1 {
+  display: flex;
+  flex-direction: column;
+  height: 397px;
+  left: 139px;
+  position: absolute;
+  top: 0;
+  width: 316px;
+}
+
+.money-symbol-paid-1 {
+  height: 91.84px;
+  margin-left: 101.1px;
+  object-fit: cover;
+  width: 82.29px;
+}
+
+.cost-savings {
+  height: 45.92px;
+  letter-spacing: 0;
+  margin-top: 31.6px;
+  text-align: center;
+  width: 312px;
+}
+
+.well-discuss-how-so {
+  height: 217.15px;
+  letter-spacing: 0;
+  margin-left: 23.1px;
+  margin-top: 10.5px;
+  text-align: center;
+  width: 241.71px;
+}
+
+.overlap-group1 {
+  align-items: flex-end;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 703px;
+  left: 39px;
+  min-width: 511px;
+  padding: 0 16px;
+  position: absolute;
+  top: 993px;
+}
+
+.business-man-suit-png-1 {
+  height: 377px;
+  object-fit: cover;
+  width: 208px;
+}
+
+.meet-john-section {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 351px;
+  position: absolute;
+  top: 1035px;
+  width: 552px;
+}
+
+.meet-john {
+  color: transparent;
+  font-family: var(--font-family-open_sans);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  min-height: 43px;
+  text-align: center;
+  width: 521px;
+}
+
+.span1 {
+  color: var(--navy-blue);
+}
+
+.overlap-group2 {
+  align-self: center;
+  height: 56px;
+  margin-left: 6.0px;
+  margin-top: 21px;
+  position: relative;
+  width: 282px;
+}
+
+.solar-professional {
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 282px;
+}
+
+.line-1 {
+  height: 4px;
+  left: 56px;
+  position: absolute;
+  top: 42px;
+  width: 103px;
+}
+
+.x5-years-experience {
+  align-self: flex-end;
+  color: var(--black);
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-xxxxs);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-right: 6px;
+  margin-top: 18px;
+  min-height: 213px;
+  width: 351px;
+}
+
+.going-green-has-never-been-this-easy {
+  color: transparent;
+  font-family: var(--font-family-open_sans);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-right: 7px;
+  margin-top: 39px;
+  min-height: 33px;
+  text-align: center;
+  width: 472px;
+}
+
+.span1-1 {
+  color: var(--forest-green);
+}
+
+.lead-form {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  height: 497px;
+  margin-left: 12.0px;
+  margin-top: 41px;
+  min-width: 465px;
+}
+
+.overlap-group3 {
+  align-items: flex-start;
+  background-color: var(--navy-blue);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 497px;
+  padding: 20.8px 37.3px;
+  width: 453px;
+}
+
+.leave-your-info-to-schedule-a-call {
+  letter-spacing: 0;
+  min-height: 75px;
+  text-align: center;
+  width: 378px;
+}
+
+.overlap-group5 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  margin-top: 30px;
+  min-width: 378px;
+}
+
+.place {
+  height: 45px;
+  letter-spacing: 0;
+  width: 378px;
+}
+
+.overlap-group-container {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 33px;
+  min-width: 378px;
+}
+
+.overlap-group4 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  min-width: 182px;
+}
+
+.email {
+  height: 45px;
+  letter-spacing: 0;
+  width: 182px;
+}
+
+.overlap-group1-1 {
+  height: 46px;
+  margin-left: 13px;
+  position: relative;
+  width: 182px;
+}
+
+.rectangle-4 {
+  background-color: var(--white);
+  border: 1px none;
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 182px;
+}
+
+.phone-1 {
+  height: 45px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 2px;
+  width: 182px;
+}
+
+.overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  margin-top: 33px;
+  min-width: 378px;
+}
+
+.message {
+  height: 88px;
+  letter-spacing: 0;
+  width: 378px;
+}
+
+.overlap-group2-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 15px;
+  display: flex;
+  margin-top: 33px;
+  min-width: 378px;
+}
+
+.book-a-consultation {
+  height: 45px;
+  letter-spacing: 0;
+  text-align: center;
+  width: 378px;
+}
+
+.solar-panels-white-background-1 {
+  align-self: center;
+  height: 378px;
+  margin-left: 7.0px;
+  margin-top: 40px;
+  object-fit: cover;
+  width: 490px;
+}
+

@@ -29,10 +29,10 @@ import {
 
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/Header'
-import Sidenav from "./components/Sidenav";
-import Forms from "./components/Forms"
-import UnknownPage from './components/404';
-import Layout from "./pages/Layout";
+import Phone from "./components/Phone";
+import Desktop from "./components/Desktop";
+import LargeTablet from "./components/LargeTablet";
+import SmallTablet from "./components/SmallTablet";
 import Footer from "./components/Footer"
 import Home from "./pages/Home";
 import Pricing from './pages/Pricing';
@@ -40,21 +40,26 @@ import Form from "./pages/Form";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import SolarForm from './components/Forms/Solar Form';
 
 function App() {
   return (
       <Box className="App">
           <Header />
           <Routes>
+            <Route path="/desktop" element={<Desktop {...desktopData} />} />
+            <Route path="/phone" element={<Phone {...phoneData} />} />
+            <Route path="/large-tablet" element={<LargeTablet {...largeTabletData} />} />
+            <Route path="/small-tablet" element={<SmallTablet {...smallTabletData} />} />
+           
               <Route index element={<Home />} />
               <Route path="/pricing" element={<Pricing />} />
-              <Route path="/form" element={<Form />} />
+              <Route path="/solarForm" element={<SolarForm />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NoPage />} />
           </Routes>
-        {/* </Box> */}
-        {/* </ThemeProvider> */}
+       
         <Footer/>
       </Box>
       
@@ -112,7 +117,7 @@ const desktopData = {
   spanText3: " consultation and find out how other homeowners are saving money through solar.",
   funnelPerson2Png1: "/img/funnel-person-2-png-1@1x.png",
   duringThisFreePre: "DURING THIS FREE PRESENTATION YOU WILL LEARN ABOUT",
-  moneySymbolPaid1: "/img/money-symbol-paid-1@2x.png",
+  moneySymbolPaid1: "..static/img/money-symbol-paid-1@2x.png",
   iconKey: "/img/key-icon-1@2x.png",
   taxReceiptIcon1: "/img/tax-receipt-icon-1@2x.png",
   costSavings: "Cost Savings",
@@ -131,7 +136,7 @@ const desktopData = {
   spanText6: "Going ",
   spanText7: "Green",
   spanText8: " has never been this easy.",
-  solarPanelsWhiteBackground1: "/img/solar-panels-white-background-1@1x.png",
+  solarPanelsWhiteBackground1: "",
 };
 
 const leadForm2Data = {

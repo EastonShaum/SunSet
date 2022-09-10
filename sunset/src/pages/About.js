@@ -22,7 +22,7 @@ export default function About({ page }) {
       <Box
         sx={{
           margin: 0,
-          position: 'fixed',
+          //position: 'fixed',
           top: 0,
           right: 0,
           bottom: 0,
@@ -44,6 +44,8 @@ export default function About({ page }) {
             <Box>This is the About page</Box>
             <Link to="/">Home page</Link>
             <Link to="/contact">Contact page</Link>
+            <Box>Here is the image</Box>
+            <img src={require("../static/img/business-man-suit-png-1-1@2x.png")} alt=""></img>
           </Grid>
         </Grid>
       </Box>

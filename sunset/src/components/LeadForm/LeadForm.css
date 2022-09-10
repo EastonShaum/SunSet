@@ -1,0 +1,122 @@
+.lead-form-1 {
+  align-items: flex-start;
+  display: flex;
+  height: 650px;
+  margin-left: 74.0px;
+  margin-top: 79px;
+  min-width: 656px;
+}
+
+.overlap-group2-2 {
+  align-items: flex-start;
+  background-color: var(--navy-blue);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  min-height: 650px;
+  padding: 27.2px 53px;
+  width: 644px;
+}
+
+.leave-your-info-to-schedule-a-call-1 {
+  letter-spacing: 0;
+  min-height: 99px;
+  text-align: center;
+  width: 537px;
+}
+
+.overlap-group5-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  margin-top: 39px;
+  min-width: 537px;
+}
+
+.place-1 {
+  height: 58px;
+  letter-spacing: 0;
+  width: 537px;
+}
+
+.overlap-group-container-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 43px;
+  min-width: 537px;
+}
+
+.overlap-group4-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  min-width: 259px;
+}
+
+.email-1 {
+  height: 58px;
+  letter-spacing: 0;
+  width: 259px;
+}
+
+.overlap-group-3 {
+  height: 60px;
+  margin-left: 19px;
+  position: relative;
+  width: 259px;
+}
+
+.rectangle-4-1 {
+  background-color: var(--white);
+  border: 1px none;
+  height: 58px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 259px;
+}
+
+.phone-2 {
+  height: 58px;
+  left: 0;
+  letter-spacing: 0;
+  position: absolute;
+  top: 2px;
+  width: 259px;
+}
+
+.overlap-group1-3 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  margin-top: 43px;
+  min-width: 537px;
+}
+
+.message-1 {
+  height: 115px;
+  letter-spacing: 0;
+  width: 537px;
+}
+
+.overlap-group3-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 15px;
+  display: flex;
+  margin-top: 43px;
+  min-width: 537px;
+}
+
+.book-a-consultation-1 {
+  height: 58px;
+  letter-spacing: 0;
+  text-align: center;
+  width: 537px;
+}
+
+.lead-form-1.lead-form-2 {
+  margin-left: 12.0px;
+  margin-top: 55px;
+}
+
