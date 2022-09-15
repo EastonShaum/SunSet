@@ -15,17 +15,16 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import sendEmail from '../../../utils/courier';
 
 
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = ['Shipping address'];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
       return <AddressForm />;
     case 1:
-      return <PaymentForm />;
-    case 2:
       return <Review />;
     default:
       throw new Error('Unknown step');
@@ -46,7 +45,7 @@ export default function SolarForm() {
   };
 
   const handleFinish = () => {
-    
+    sendEmail();
   };
 
   return (
@@ -89,12 +88,10 @@ export default function SolarForm() {
                 {activeStep === steps.length - 1 ? 
                     <Button
                     variant="contained"
-                    onClick={handleNext}
+                    onClick={handleFinish}
                     sx={{ mt: 3, ml: 1 }}
                   >
-                    <form action="../../../utils/emailsender.php">
-                        <input type="submit" value="click on me!"/>
-                    </form>
+                    Finish
                   </Button> : 
                   <Button
                     variant="contained"

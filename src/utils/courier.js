@@ -1,9 +1,12 @@
 // Install with: npm install @trycourier/courier
 import { CourierClient } from "@trycourier/courier";
 
-const courier = CourierClient({ authorizationToken: "pk_prod_KQ3Z7S5W8QMQTBG6TFPQS6X8X6TJ" });
+export default async function sendEmail(){
 
-const { requestId } = await courier.send({
+  
+  const courier = CourierClient({ authorizationToken: "pk_prod_KQ3Z7S5W8QMQTBG6TFPQS6X8X6TJ" });
+  
+  const { requestId } = await courier.send({
   message: {
     to: { 
     },
@@ -15,3 +18,4 @@ const { requestId } = await courier.send({
 });
 
 //"eastonshaum@gmail.com"
+}

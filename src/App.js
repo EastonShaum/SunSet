@@ -45,7 +45,7 @@ import SolarForm from './components/Forms/Solar Form';
 function App() {
   return (
       <Box className="App">
-          <Header />
+        <Header />
           <Routes>
             <Route path="/desktop" element={<Desktop {...desktopData} />} />
             <Route path="/phone" element={<Phone {...phoneData} />} />
