@@ -1,6 +1,7 @@
 {
   "name": "sunset",
   "version": "0.1.0",
+  "homepage":"https://sunsetsolar.us/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",

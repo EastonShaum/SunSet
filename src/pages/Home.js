@@ -13,10 +13,6 @@ import {
 } from '@mui/material'
 
 export default function Home({ page }) {
-
-  // const  { username: userParam } = useParams();
-  // If loggedIn token returns the username that matches the userParam, user is redirected to the main page (/my-kit) file
-  // console.log(Auth);
   
   return (
     <Box
