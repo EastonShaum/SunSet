@@ -38,7 +38,7 @@ function Copyright(props) {
 export default function Footer() {
 
   //No Footer for these pages
-  if(window.location.href.indexOf('solar') > -1)
+  if(window.location.href.indexOf('solarform') > -1)
   {
    return; 
   }

@@ -44,6 +44,8 @@ export default function Contact({ page }) {
             <Box>This is the Contact page</Box>
             <Link to="/">Home page</Link>
             <Link to="/about">About page</Link>
+            <Link to="/pricing">Pricing </Link>
+            <Link to="/solarform">Solar Form </Link>
           </Grid>
         </Grid>
       </Box>

@@ -1,0 +1,7 @@
+@document url-prefix("http://www.sunsetsolar.us/solarform" || "http://localhost:3000//solarform") {
+    #header
+    {
+        visibility: hidden !important;
+    }
+  }
+  

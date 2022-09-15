@@ -5,7 +5,8 @@ import { useLocation } from 'react-router-dom';
 //import { sideNavVisible } from "../../utils/globalSlice.js"
 import { Link } from "react-router-dom";
 
-//import Auth from '../../utils/auth'
+//import Auth from '../../utils/auth' 
+import "./header.css"
 
 import {
   Box,
@@ -22,13 +23,13 @@ import { MdMenu, MdAdd } from "react-icons/md";
 
 export default function Header() {
   //No header for these pages
-  if(window.location.href.indexOf('solar') > -1)
+  if(window.location.href.indexOf('solarform') > -1)
   {
    return; 
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box id="header" sx={{ flexGrow: 1 }}>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <AppBar
