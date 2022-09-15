@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "034d543b4b808aac8d6f",
+    "revision": "010071ebd0c0ccd8848e",
     "url": "/static/css/main.b4754733.chunk.css"
   },
   {
-    "revision": "034d543b4b808aac8d6f",
-    "url": "/static/js/main.034d543b.chunk.js"
+    "revision": "010071ebd0c0ccd8848e",
+    "url": "/static/js/main.010071eb.chunk.js"
   },
   {
     "revision": "497dc6329578ae794410",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/static/media/marble-background-image-1-1@1x.077a30ed.png"
   },
   {
-    "revision": "efec081a6145d76e5965cde42e9f308b",
+    "revision": "720cf9a6fd07fb255db4c4e43f60ec18",
     "url": "/index.html"
   }
 ];
