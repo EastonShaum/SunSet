@@ -6,7 +6,7 @@ import { CourierClient } from "@trycourier/courier";
 export default async function sendEmail(){
 
 
-const courier = CourierClient({ authorizationToken: "pk_prod_J4GT6J46CE439VGQHHNRQRKCWNDQ" });
+//const courier = CourierClient({ authorizationToken: "pk_prod_J4GT6J46CE439VGQHHNRQRKCWNDQ" });
 
 // const { requestId } = await courier.send({
 //   message: {

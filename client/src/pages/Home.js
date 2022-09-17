@@ -1,9 +1,9 @@
 import React from 'react';
 import { 
-  Link, Redirect 
+  Link,
 } from "react-router-dom";
 
-import Footer from '../components/Footer';
+//import Footer from '../components/Footer';
 import Pricing from './Pricing';
 
 import {
@@ -36,6 +36,7 @@ export default function Home({ page }) {
         </Grid>
         <p> can I add to this?</p>
       </Grid>
+        <Pricing></Pricing>
       
     </Box>
   )

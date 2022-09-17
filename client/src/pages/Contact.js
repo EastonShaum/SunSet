@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  Link, Redirect 
+  Link,
 } from "react-router-dom";
 
 
@@ -41,7 +41,7 @@ export default function Contact({ page }) {
           }}
         >
           <Grid item xs={12} sm={10} md={6} lg={4} xl={4}>
-            <Box>This is the Contact page</Box>
+            <Typography>This is the Contact page</Typography>
             <Link to="/">Home page</Link>
             <Link to="/about">About page</Link>
             <Link to="/pricing">Pricing </Link>

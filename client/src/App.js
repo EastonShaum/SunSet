@@ -29,10 +29,7 @@ import {
 
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/Header'
-import Phone from "./components/Phone";
 import Desktop from "./components/Desktop";
-import LargeTablet from "./components/LargeTablet";
-import SmallTablet from "./components/SmallTablet";
 import Footer from "./components/Footer"
 import Home from "./pages/Home";
 import Pricing from './pages/Pricing';
@@ -48,9 +45,7 @@ function App() {
         <Header />
           <Routes>
             <Route path="/desktop" element={<Desktop {...desktopData} />} />
-            <Route path="/phone" element={<Phone {...phoneData} />} />
-            <Route path="/large-tablet" element={<LargeTablet {...largeTabletData} />} />
-            <Route path="/small-tablet" element={<SmallTablet {...smallTabletData} />} />
+            
            
               <Route index element={<Home />} />
               <Route path="/pricing" element={<Pricing />} />

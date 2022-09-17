@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 
 //import { useDispatch } from "react-redux";
 //import { sideNavVisible } from "../../utils/globalSlice.js"
@@ -10,7 +9,6 @@ import "./header.css"
 
 import {
   Box,
-  IconButton,
   Typography,
   AppBar,
   Toolbar,
@@ -19,7 +17,7 @@ import {
 import CssBaseline from '@mui/material/CssBaseline';
 import GlobalStyles from '@mui/material/GlobalStyles';
 
-import { MdMenu, MdAdd } from "react-icons/md";
+
 
 export default function Header() {
   //No header for these pages

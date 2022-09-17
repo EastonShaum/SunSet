@@ -5,7 +5,7 @@ import "./Desktop.css";
 //Images
 import funnelPerson2Png1 from '../../static/img/funnel-person-2-png-1-1@2x.png'
 import solarPanelsWhite from '../../static/img/solar-panels-white-background-1-1@2x.png'
-import marbleBackgroundImage1 from '../../static/img/marble-background-image-1-1@1x.png'
+//import marbleBackgroundImage1 from '../../static/img/marble-background-image-1-1@1x.png'
 import businessManSuitPng1 from '../../static/img/business-man-suit-png-1-1@2x.png'
 //import solarPanelsWhite from '../../static/img/solar-panels-white-background-1-1@2x.png'
 
@@ -15,21 +15,21 @@ import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
 
 
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
+//import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
+//import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
+//import CardMedia from '@mui/material/CardMedia';
 import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
+//import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
+//import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
