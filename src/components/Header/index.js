@@ -40,33 +40,33 @@ export default function Header() {
       >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            Solar Mountain
+            SunSet Solar
           </Typography>
           <nav>
-            <Link
+            {/* <Link
               variant="button"
               color="text.primary"
               to=""
               sx={{ my: 1, mx: 1.5 }}
             >
               Features
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               variant="button"
               color="text.primary"
               to=""
               sx={{ my: 1, mx: 1.5 }}
             >
               Enterprise
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               variant="button"
               color="text.primary"
               to=""
               sx={{ my: 1, mx: 1.5 }}
             >
               Support
-            </Link>
+            </Link> */}
           </nav>
          
         </Toolbar>

@@ -54,11 +54,11 @@ export default function SolarForm() {
       <CssBaseline />
       
       <Container component="main" maxWidth="md" sx={{ mb: 4 }}>
-        <Paper variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
+        <Paper id="form" variant="outlined" sx={{ my: { xs: 3, md: 6 }, p: { xs: 2, md: 3 } }}>
           <Typography component="h1" variant="h4" align="center">
-            Fill out the information for a free solar consultation
+            Get a free personalized quote
           </Typography>
-          <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
+          <Stepper activeStep={activeStep}>
             {steps.map((label) => (
               <Step key={label}>
                 {/* <StepLabel>{label}</StepLabel> */}

@@ -5,6 +5,8 @@ import {
 
 import Footer from '../components/Footer';
 import Pricing from './Pricing';
+import SolarForm from './../components/Forms/Solar Form';
+import Desktop from '../components/Desktop';
 
 import {
   Grid,
@@ -17,24 +19,27 @@ export default function Home({ page }) {
   return (
     <Box>
       <Grid
-        container
         justifyContent="center"
         sx={{
           width: '100%',
-          padding: 2
+          padding: 0
         }}
       >
-        <Grid item xs={12} sm={10} md={6} lg={4} xl={4}>
+        <Grid >
 
           
-          <Box>This is the home page</Box>
+          {/* <Box>This is the home page</Box> */}
           {/* <Link to="/form">Form page</Link> */}
-          <Link to="/pricing">Pricing </Link>
-          <Link to="/about">About page</Link>
-          <Link to="/contact">Contact page</Link>
-          <Link to="/404">404 page</Link>
+          {/* <Link to="/pricing">Pricing </Link> */}
+          {/* <Link to="/about">About page</Link> */}
+          {/* <Link to="/contact">Contact page</Link> */}
+          {/* <Link to="/404">404 page</Link> */}
+        {/* <p> can I add to this?</p> */}
+
+        <Desktop/>
+
+        <SolarForm/>
         </Grid>
-        <p> can I add to this?</p>
       </Grid>
       
     </Box>

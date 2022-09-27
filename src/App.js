@@ -44,8 +44,8 @@ function App() {
       <Box className="App">
         {/* <Header /> */}
           <Routes>
-              <Route index element={<SolarForm />} />
-              {/* <Route index element={<Home />} /> */}
+              {/* <Route index element={<SolarForm />} /> */}
+              <Route index element={<Home />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/solarForm" element={<SolarForm />} />
               <Route path="/about" element={<About />} />

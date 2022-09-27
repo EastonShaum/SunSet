@@ -10,7 +10,7 @@ export default function AddressForm2() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Personal and Home information
+        No strings attached.
       </Typography>
       
       <form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/f/mrgdpweb" method="post">

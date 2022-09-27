@@ -3,11 +3,13 @@ import "./Desktop.css";
 
 
 //Images
-import funnelPerson2Png1 from '../../static/img/funnel-person-2-png-1-1@2x.png'
+import funnelPerson2Png1 from '../../static/img/funnel-person-2-png-1@1x.png'
 import solarPanelsWhite from '../../static/img/solar-panels-white-background-1-1@2x.png'
 import marbleBackgroundImage1 from '../../static/img/marble-background-image-1-1@1x.png'
 import businessManSuitPng1 from '../../static/img/business-man-suit-png-1-1@2x.png'
 //import solarPanelsWhite from '../../static/img/solar-panels-white-background-1-1@2x.png'
+import solarPanelInstall from '../../static/img/solar-panel-install.jpg'
+import solarHouseSunset from '../../static/img/solar-house-sunset.jpg'
 
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import KeyIcon from '@mui/icons-material/Key';
@@ -33,6 +35,11 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
+const styles = {
+  boxContainer: {
+      backgroundImage: `url(${solarHouseSunset})`
+  }
+};
 
 const cards = [1, 2, 3];
 
@@ -74,28 +81,33 @@ export default function Desktop(props) {
       <main>
         {/* Hero unit */}
         <Box
+        style={styles.boxContainer}
           sx={{
-            bgcolor: 'primary.dark',
-            pt: 8,
-            pb: 6,
+            bgcolor: 'white',
+            backgroundImage: 'url(${solarPanelsWhite})',
+            backgroundSize: "110vh",
+            backgroundPosition: "center", 
+            backgroundRepeat: "no-repeat",
+            pt: 1,
+            pb: 2,
           }}
         >
           <Stack
-              sx={{ pt: 4 }}
-              direction="row"
+              sx={{ pt: 0 }}
+              direction="column"
               spacing={2}
-              justifyContent="center"
+              justifyContent="bottom"
             >
-          <Container maxWidth="sm">
-          <Typography
-              component="h4"
-              variant="h5"
-              align="center"
-              color="text.primary"
-              gutterBottom
-            >
-              Save Money and Own Your Power Today Through
-            </Typography>
+            <Container maxWidth="md">
+              <Typography
+                component="h4"
+                variant="h5"
+                align="center"
+                color="text.primary"
+                gutterBottom
+              >
+                Save Money and Own Your Power Today Through
+              </Typography>
             <Typography
               component="h1"
               variant="h2"
@@ -105,25 +117,25 @@ export default function Desktop(props) {
             >
               Solar Energy
             </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
-            Sign up for a FREE consultation and find out how other homeowners are saving money through solar.
+            <Typography variant="h5" align="left" color="text.secondary" paragraph>
+            See below for a FREE consultation and find out how homeowners are saving money through Solar.
             </Typography>
             <Stack
-              sx={{ pt: 4 }}
+              sx={{ pt: 25 }}
               direction="row"
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
+              <Button href="#form" variant="contained"><a href="#form">Tell me more!</a></Button>
             </Stack>
             
           </Container>
           <Container>
-            <img className="" src={funnelPerson2Png1} />
+            {/* <img className="" src={funnelPerson2Png1} /> */}
           </Container>
           </Stack>
         </Box>
-        <Container sx={{ py: 8 }} maxWidth="md">
+        <Container sx={{ py: 4 }} maxWidth="md">
           {/* End hero unit */}
 
           <Box text-align="center">
@@ -146,7 +158,7 @@ export default function Desktop(props) {
                       Cost Savings
                     </Typography>
                     <Typography>
-                      We’ll discuss how solar is used as a tool to save on monthly expenses and curb inflation.
+                      We'll discuss how solar is used as a tool to save on monthly expenses and curb inflation.
                     </Typography>
                   </CardContent>
                   <CardActions>
