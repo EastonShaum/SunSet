@@ -1,5 +1,5 @@
 import './App.css';
-import React, { Component }  from 'react';
+import React, { Component, useEffect }  from 'react';
 import { 
   BrowserRouter as Router,
   Routes,
@@ -38,8 +38,17 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import SolarForm from './components/Forms/Solar Form';
+import reactGA from 'react-ga4';
 
 function App() {
+
+  useEffect(() => {
+    reactGA.initialize('G-L57W6Q4MZ4') 
+    //to report pageview
+    reactGA.pageview('/')
+    },[])
+  
+
   return (
       <Box className="App">
         {/* <Header /> */}
