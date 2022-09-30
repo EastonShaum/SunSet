@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+html {
+  scroll-behavior: smooth;
+ }
+
+ a, u {
+  text-decoration: none;
+  color: black;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
