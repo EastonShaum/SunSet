@@ -126,7 +126,7 @@ export default function Desktop(props) {
               spacing={2}
               justifyContent="center"
             >
-              <Button href="#form" variant="contained"><a href="#form">Tell me more!</a></Button>
+              <Button href="#form" variant="contained" color="success"><a href="#form">Tell me more!</a></Button>
             </Stack>
             
           </Container>
